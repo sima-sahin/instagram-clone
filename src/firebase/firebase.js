@@ -6,14 +6,14 @@ import { useEffect, useState } from "react";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyClDATqUPIIiSEblMJGPEOlKFM1D1j-GV0",
-    authDomain: "instagram-clone-b0af3.firebaseapp.com",
-    projectId: "instagram-clone-b0af3",
-    storageBucket: "instagram-clone-b0af3.firebasestorage.app",
-    messagingSenderId: "898549548621",
-    appId: "1:898549548621:web:cc534f7b5dc9f4b08a3e04",
-    measurementId: "G-9SZD4EFPYZ"
-  };
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+};
 
 
 const app = initializeApp(firebaseConfig);
@@ -26,7 +26,6 @@ export const storage = getStorage(app);
 // POSTS LISTENER
 const postsRef = collection(db, "posts");
 
-
 export const usePostsListener = () => {
   const [posts, setPosts] = useState([]);
 
@@ -35,7 +34,7 @@ export const usePostsListener = () => {
       console.log(snapshot.docs);
       setPosts(
         snapshot.docs.map((value) => {
-          return { id: value.uid, ...value.data(), timestamp: value.data().timestamp.toDate()}
+          return { id: value.uid, ...value.data(), timestamp: value.data().timestamp.toDate() }
         })
       );
     });
