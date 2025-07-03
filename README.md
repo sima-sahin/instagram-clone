@@ -1,12 +1,43 @@
-# React + Vite
+# Instagram Clone 📸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured **Instagram clone** built with **React.js** and **Firebase**. Users can sign up, log in, upload posts with images, like and comment on posts — all in real-time!
 
-Currently, two official plugins are available:
+🌐 [Live Demo (optional)](https://instagram-clone.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
 
-## Expanding the ESLint configuration
+- 🔥 **Firebase Authentication** – secure sign-up & login
+- ☁️ **Firebase Firestore** – real-time database for posts & comments
+- 📁 **Firebase Storage** – store and serve image uploads
+- ⚛️ **React.js** – component-based UI
+- 🎨 **Tailwind CSS** – responsive and clean design
+- 🚀 **React Router** – for client-side navigation
+- 📦 **Redux / Context** – state management
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- ✅ User authentication (Sign up / Log in / Log out)
+- ✅ Upload and display images with captions
+- ✅ Real-time likes and comments
+- ✅ Responsive layout for all screen sizes
+- ✅ Profile photos and user feeds
+- ✅ Fully dynamic Firestore integration
+
+## 🔐 Firebase Setup
+
+To run this project locally, you’ll need your own Firebase credentials:
+
+1. Create a Firebase project at [https://console.firebase.google.com](https://console.firebase.google.com)
+2. Enable:
+   - **Authentication** (Email/Password)
+   - **Firestore Database**
+   - **Storage**
+3. Create a `.env` file in the root directory and add:
+
+```env
+VITE_FIREBASE_API_KEY=your-api-key
+VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
+VITE_FIREBASE_APP_ID=your-app-id

@@ -10,7 +10,6 @@ export const createPost = createAsyncThunk("posts/createPost", async ({ file }, 
     if (!auth.currentUser) throw new Error("Kullanıcı bilgisi yok!");
 
     const imageUrl = await uploadPostImage(file);
-    //FARKLI DOSYA EXPORT HATASI OLABİLİR
 
     const newPost = {
       username: auth.currentUser.username || "Anonim",

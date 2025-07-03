@@ -12,7 +12,6 @@ import usePosts from "../firebase/getDoc";
 
 const Post = ({ post }) => {
 
-  // DENEME
   const posts = usePosts();
   console.log(posts.map((value)=> value));
 
