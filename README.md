@@ -12,7 +12,7 @@ A full-featured **Instagram clone** built with **React.js** and **Firebase**. Us
 - ⚛️ **React.js** – component-based UI
 - 🎨 **Tailwind CSS** – responsive and clean design
 - 🚀 **React Router** – for client-side navigation
-- 📦 **Redux / Context** – state management
+- 📦 **Redux Toolkit** – state management
 
 ## ✨ Features
 
