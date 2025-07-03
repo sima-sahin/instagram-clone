@@ -2,7 +2,7 @@
 
 A full-featured **Instagram clone** built with **React.js** and **Firebase**. Users can sign up, log in, upload posts with images, like and comment on posts — all in real-time!
 
-🌐 [Live Demo](https://sima.instgrm.netlify.app)
+🌐 [Live Demo]([https://sima.instgrm.netlify.app](https://sima-instgrm.netlify.app/))
 
 ## ⚙️ Tech Stack
 
